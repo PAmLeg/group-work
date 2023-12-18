@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Tourism Connect Tanzania</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1em;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <h1>Tourism Connect Tanzania</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </div>
+
+    <main>
+        <h1 style="text-align: center;">Contact form</h1>
+        <form action="https://formspree.io/f/mrgnzpqb"
+        method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+      
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+      
+            <button type="submit">Submit</button>
+          </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tourism Connect Tanzania. All rights reserved.</p>
+        <p>Developed by GalemTech</p>
+    </footer>
+  </body>
+</html>
